@@ -7,7 +7,6 @@ import { AppService } from './app.service';
 import { AuthModule } from './modules/auth/auth.module';
 import { InventoryModule } from './modules/inventory/inventory.module';
 import { DailyStockCheckJob } from './jobs/daily-stock-check.job';
-import typeormConfig from './config/typeorm';
 
 // Import entities
 import { Category } from './entities/category.entity';

@@ -3,9 +3,6 @@ import { Cron, CronExpression } from '@nestjs/schedule';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { InventoryItem } from '../entities/inventory-item.entity';
-import { Product } from '../entities/product.entity';
-import { Warehouse } from '../entities/warehouse.entity';
-import { InventoryService } from '../modules/inventory/inventory.service';
 
 interface StockCheckResult {
   totalProducts: number;

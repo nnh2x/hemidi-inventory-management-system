@@ -64,7 +64,6 @@ export class ProductController {
   async findAll(
     @Query('category') categoryId?: number,
     @Query('search') search?: string,
-    @Query('active') active?: boolean,
   ): Promise<Product[]> {
     if (search) {
       return this.productService.searchProducts(search);
